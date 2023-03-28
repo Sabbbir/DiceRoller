@@ -11,6 +11,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var diceImg: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"LOL ROLL",Toast.LENGTH_LONG).show()
             rollDice()
         }
+        diceImg = findViewById(R.id.dice_img)
 
     }
 
@@ -36,7 +39,6 @@ val texxt: TextView = findViewById(R.id.textt)
             5-> R.drawable.dice_5
             else-> R.drawable.dice_6
         }
-        val diceImg: ImageView = findViewById(R.id.dice_img)
         diceImg.setImageResource(drawableRsc)
 
     }

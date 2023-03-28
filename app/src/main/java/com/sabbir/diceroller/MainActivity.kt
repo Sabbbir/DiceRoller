@@ -25,12 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         val randd = Random().nextInt(6)+1
-<<<<<<< HEAD
 
-=======
 val texxt: TextView = findViewById(R.id.textt)
         texxt.text = randd.toString()
->>>>>>> a0ba948 (added number of the rolled dice in a textview)
         val drawableRsc = when(randd){
             1-> R.drawable.dice_1
             2-> R.drawable.dice_2
@@ -41,10 +38,7 @@ val texxt: TextView = findViewById(R.id.textt)
         }
         val diceImg: ImageView = findViewById(R.id.dice_img)
         diceImg.setImageResource(drawableRsc)
-<<<<<<< HEAD
 
-=======
->>>>>>> a0ba948 (added number of the rolled dice in a textview)
     }
 
 }
